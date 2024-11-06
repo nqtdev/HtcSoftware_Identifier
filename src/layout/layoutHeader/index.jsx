@@ -156,7 +156,7 @@ const LayoutHeader = () => {
                 {/* Download Plugin */}
                 <Dropdown.Item onClick={closeMenu}>
                   {' '}
-                  <a href='https://htcsoftware.vn/checkid_client_installer.zip'>
+                  <a href='https://dinhdanhdientu.vn/checkid_client_installer.zip'>
                     {/* <a href={AppHTC}> */}
                     <Button gradientDuoTone='purpleToBlue' className='flex w-[12rem]'>
                       <div className='flex items-center'>
