@@ -94,7 +94,7 @@ const LayoutHeader = () => {
               </Dropdown>
             </Button>
             {/* Thiết Bị */}
-            <Button gradientDuoTone='purpleToBlue' className='mb-1 md:mb-0'>
+            {/* <Button gradientDuoTone='purpleToBlue' className='mb-1 md:mb-0'>
               <Dropdown
                 arrowIcon={true}
                 label='Thiết Bị'
@@ -102,62 +102,36 @@ const LayoutHeader = () => {
                 placement='bottom'
                 className='absolute mt-2'
               >
-                {/* CheckID-SR */}
-                <Dropdown.Item
-                  as={NavLink}
-                  to='/products/check-id-sr'
-                  onClick={closeMenu} // Đóng menu khi nhấp vào
-                >
+                <Dropdown.Item as={NavLink} to='/products/check-id-sr' onClick={closeMenu}>
                   <Button gradientDuoTone='purpleToBlue' className='w-[12rem]'>
                     CheckID-SR
                   </Button>
                 </Dropdown.Item>
 
-                {/* CheckID-ET100 */}
-                <Dropdown.Item
-                  as={NavLink}
-                  to='/products/check-id-et100'
-                  onClick={closeMenu} // Đóng menu khi nhấp vào
-                >
+                <Dropdown.Item as={NavLink} to='/products/check-id-et100' onClick={closeMenu}>
                   <Button gradientDuoTone='purpleToBlue' className='w-[12rem]'>
                     CheckID-ET100
                   </Button>
                 </Dropdown.Item>
-                <Dropdown.Item
-                  as={NavLink}
-                  to='/products/check-id-r301'
-                  onClick={closeMenu} // Đóng menu khi nhấp vào
-                >
+                <Dropdown.Item as={NavLink} to='/products/check-id-r301' onClick={closeMenu}>
                   <Button gradientDuoTone='purpleToBlue' className='w-[12rem]'>
                     CheckID-R301
                   </Button>
                 </Dropdown.Item>
-                <Dropdown.Item
-                  as={NavLink}
-                  to='/products/check-id-hn212'
-                  onClick={closeMenu} // Đóng menu khi nhấp vào
-                >
+                <Dropdown.Item as={NavLink} to='/products/check-id-hn212' onClick={closeMenu}>
                   <Button gradientDuoTone='purpleToBlue' className='w-[12rem]'>
                     CheckID-HN202
                   </Button>
                 </Dropdown.Item>
-
-                {/* Meta eYe */}
-                <Dropdown.Item
-                  as={NavLink}
-                  to='/products/meta-eye'
-                  onClick={closeMenu} // Đóng menu khi nhấp vào
-                >
+                <Dropdown.Item as={NavLink} to='/products/meta-eye' onClick={closeMenu}>
                   <Button gradientDuoTone='purpleToBlue' className='w-[12rem]'>
                     Meta eYe
                   </Button>
                 </Dropdown.Item>
                 <Dropdown.Divider />
-                {/* Download Plugin */}
                 <Dropdown.Item onClick={closeMenu}>
                   {' '}
                   <a href='https://dinhdanhdientu.vn/store/checkid_client_installer.zip'>
-                    {/* <a href={AppHTC}> */}
                     <Button gradientDuoTone='purpleToBlue' className='flex w-[12rem]'>
                       <div className='flex items-center'>
                         Download Plugin{' '}
@@ -183,7 +157,7 @@ const LayoutHeader = () => {
                   </a>
                 </Dropdown.Item>
               </Dropdown>
-            </Button>
+            </Button> */}
           </Navbar.Collapse>
         </Navbar>
       </header>

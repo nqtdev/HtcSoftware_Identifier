@@ -4,7 +4,7 @@ import Layout from 'layout/index'
 import CheckIdSr from 'pages/products/check-id-sr'
 import CheckIdEt from 'pages/products/check-id-et'
 import MetaEye from 'pages/products/meta-eye'
-import IdPassPage from 'pages/IdPass'
+// import IdPassPage from 'pages/IdPass'
 import CheckIdRt from 'pages/products/check-id-r301'
 import CheckIdHn from 'pages/products/check-id-hn202'
 import EkycPlatform from 'pages/solutions/EkycPlatform'
@@ -17,7 +17,7 @@ const Routers = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <IdPassPage />,
+        element: <RarEkyc />,
       },
       {
         path: 'solution',
