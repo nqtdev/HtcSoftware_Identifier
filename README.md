@@ -7,3 +7,7 @@ npm install eslint eslint-plugin-react eslint-plugin-react-hooks eslint-config-p
 # Cài đặt Prettier
 
 npm install prettier --save-dev
+
+## Lịch sử cập nhật
+
+- v1.0.0: sửa lại cấu hình node.js.yml
