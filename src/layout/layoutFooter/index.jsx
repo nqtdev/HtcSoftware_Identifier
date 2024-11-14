@@ -67,10 +67,10 @@ const LayoutFooter = () => {
               </div>
               <div className='flex mt-2 w-3/4 items-center'>
                 <div className='w-full'>
-                  <img className='w-4/5' src={imgBcta} alt='' />
+                  <img className='w-4/5' src={imgBcta} alt='ảnh chứng nhận bộ công thương' />
                 </div>
                 <div className='w-full'>
-                  <img className='w-4/5' src={imgBctb} alt='' />
+                  <img className='w-4/5' src={imgBctb} alt='ảnh chứng nhận bộ công thương' />
                 </div>
               </div>
             </div>
