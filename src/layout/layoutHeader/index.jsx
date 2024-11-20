@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import {Dropdown, Navbar, Button} from 'flowbite-react'
 import {NavLink} from 'react-router-dom'
-import logo from 'assets/logo/logo_sw.png'
+// import logo from 'assets/logo/logo_sw.webp'
 
 const LayoutHeader = () => {
   // Quản lý trạng thái mở/đóng của menu
@@ -23,7 +23,7 @@ const LayoutHeader = () => {
         <Navbar fluid className='m-auto !p-1 xl:w-[85%] xxl:w-3/4'>
           {/* Logo HTC Software */}
           <Navbar.Brand to='/' as={NavLink}>
-            <img src={logo} className='w-1/2' alt='HTC Software Logo' />
+            <img src='/logo_sw.webp' className='w-1/2' alt='HTC Software Logo' />
           </Navbar.Brand>
 
           {/* Nút Toggle Tùy Chỉnh cho Mobile */}
@@ -131,7 +131,7 @@ const LayoutHeader = () => {
                 <Dropdown.Divider />
                 <Dropdown.Item onClick={closeMenu}>
                   {' '}
-                  <a href='https://dinhdanhdientu.vn/store/checkid_client_installer.zip'>
+                  <a href='https://htcsoftware.vn/store/CheckId-Client-Installer_INTERNAL_LIVE.rar'>
                     <Button gradientDuoTone='purpleToBlue' className='flex w-[12rem]'>
                       <div className='flex items-center'>
                         Download Plugin{' '}
