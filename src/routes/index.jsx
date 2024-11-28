@@ -16,7 +16,7 @@ const Routers = createBrowserRouter([
     element: <Layout />,
     children: [
       {
-        path: '/',
+        index: true,
         element: <RarEkyc />,
       },
       {
