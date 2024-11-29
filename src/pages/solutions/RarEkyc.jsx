@@ -12,8 +12,8 @@ import IconNfc from 'assets/page_RarEkyc/section_content_b/icon_nfc.png'
 import IconSdk from 'assets/page_RarEkyc/section_content_b/icon_sdk.png'
 import IconApi from 'assets/page_RarEkyc/section_content_b/icon_api.png'
 import Banner_CCDV from 'assets/page_RarEkyc/section_content_b/banner_section.png'
-import PartnerLogo from 'components/rar-ekyc/PartnerLogo'
-import Certificate from 'components/rar-ekyc/Certificate'
+import PartnerLogo from 'components/rarEkyc/PartnerLogo'
+import Certificate from 'components/rarEkyc/Certificate'
 import useCheckMobile from 'hooks/useCheckMobile'
 const RarEkyc = () => {
   useEffect(() => {
