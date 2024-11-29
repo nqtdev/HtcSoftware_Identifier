@@ -11,3 +11,4 @@ npm install prettier --save-dev
 ## Lịch sử cập nhật
 
 - v1.0.0: sửa lại cấu hình node.js.yml
+- 29/11 . Clean Code
