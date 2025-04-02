@@ -62,6 +62,26 @@ const LayoutHeader = () => {
             >
               Trang Chủ
             </Button>
+            <Button
+              gradientDuoTone='purpleToBlue'
+              className='mb-1 md:mb-0'
+              active
+              to='/nghiquyet-57'
+              as={NavLink}
+              onClick={closeMenu} // Đóng menu khi nhấp vào
+            >
+              NQ 57
+            </Button>
+            <Button
+              gradientDuoTone='purpleToBlue'
+              className='mb-1 md:mb-0'
+              active
+              to='/mo-hinh'
+              as={NavLink}
+              onClick={closeMenu} // Đóng menu khi nhấp vào
+            >
+              Mô Hình
+            </Button>
             <Button gradientDuoTone='purpleToBlue' className='mb-1 md:mb-0'>
               <Dropdown
                 arrowIcon={true}
