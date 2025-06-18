@@ -5,15 +5,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    overflow-x: hidden;
-  }
-}
 /* body {
   @apply font-mulish;
 } */
@@ -24,7 +15,7 @@
 
 /* style thẻ h2 của các section */
 .base_title {
-  @apply my-6 text-center text-3xl font-bold text-[#2582BD] lg:my-14 lg:text-4xl;
+  @apply my-6 text-center text-3xl font-mulish text-[#2582BD] lg:my-14 lg:text-4xl;
 }
 
 /* style các đầu mục của : Giá trị chúng tôi đem lại  */
