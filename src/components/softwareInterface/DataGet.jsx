@@ -1,3 +1,5 @@
+import DescribeTitle from 'layout/DescribeTitle'
+
 /* eslint-disable react/prop-types */
 const dataCard = [
   '1- Số Căn Cước',
@@ -6,13 +8,13 @@ const dataCard = [
   '4- Giới Tính',
   '5- Quốc Tịch',
   '6- Nguyên Quán',
-  '7- Ngày Cấp',
-  '8- Ngày Hết Hạn',
-  '9- Số Căn Cước Cũ',
-  '10- Dân Tộc',
-  '11- Tôn Giáo',
-  '12- Nhận Dạng Cá Nhân',
-  '13- Thường Trú',
+  '7- Ngày Hết Hạn',
+  '8- Số Căn Cước Cũ',
+  '9- Thường Trú',
+  '10- Ngày Cấp',
+  '11- Dân Tộc',
+  '12- Tôn Giáo',
+  '13- Nhận Dạng Cá Nhân',
   '14- Họ Tên Cha, Mẹ',
   '15- Họ Tên Vợ, Chồng',
 ]
@@ -26,7 +28,6 @@ const DataGet = () => {
   const firstColumn = dataCard.slice(0, half)
   const secondColumn = dataCard.slice(half)
 
-  // eslint-disable-next-line react/prop-types
   const ListItem = ({children}) => (
     <div className='flex items-center p-3 border-b border-gray-100 last:border-b-0 hover:bg-gray-50 transition-colors duration-200'>
       <div className='w-2 h-2 bg-blue-500 rounded-full mr-3 flex-shrink-0'></div>
@@ -34,7 +35,6 @@ const DataGet = () => {
     </div>
   )
 
-  // eslint-disable-next-line react/prop-types
   const Section = ({title, data, icon}) => (
     <div className='bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300'>
       <div className='bg-gradient-to-r from-blue-500 to-blue-600 p-4'>
@@ -52,19 +52,28 @@ const DataGet = () => {
   )
 
   return (
-    <div className='py-12 px-4 bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-50 min-h-screen'>
+    <div className='py-12 px-4 min-h-screen overflow-hidden'>
       <div className='max-w-7xl mx-auto'>
         {/* Header */}
         <div className='text-center mb-12'>
-          <h2 className='base_title'>Dữ liệu trả về</h2>
-          <div className='w-24 h-1 bg-gradient-to-r from-blue-500 to-indigo-500 mx-auto rounded-full'></div>
+          <DescribeTitle title={'Dữ liệu trả về từ thiết bị đọc ID Card'} />
         </div>
 
         {/* Main Content */}
         <div className='grid lg:grid-cols-2 gap-8'>
           {/* Left Section - 15 trường thông tin */}
           <div className='space-y-6'>
-            <Section title='15 trường thông tin cơ bản' data={[]} icon='📋' />
+            <Section
+              title={
+                <span>
+                  Các trường thông tin dịnh danh trong Chip <span className='text-red-600'>*</span>{' '}
+                  <br />
+                  <i className='text-[.6rem]'> Dữ liệu có thể ít hơn nếu là thẻ Căn Cước</i>
+                </span>
+              }
+              data={[]}
+              icon='📋'
+            />
             <div className='bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow duration-300'>
               <div className='grid md:grid-cols-2 gap-0'>
                 {/* Cột đầu tiên */}
