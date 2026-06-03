@@ -1,7 +1,7 @@
-import PropTypes from 'prop-types'
-import Call from 'assets/icon_buttons/Call.webp'
 import 'animate.css'
-import {useState} from 'react'
+import Call from 'assets/icon_buttons/Call.webp'
+import PropTypes from 'prop-types'
+import { useState } from 'react'
 
 const ButtonCall = ({phoneNumber}) => {
   const [isClicked, setIsClicked] = useState(false)
@@ -27,14 +27,11 @@ const ButtonCall = ({phoneNumber}) => {
       className={`
         button_call
         animate__animated
-
-        right-[-1.7rem]
-        lg:right-0
         ${isClicked ? 'animate__zoomOutRight' : 'animate__zoomInRight'}
       `}
       onClick={handleClick}
     >
-      <img className='w-[60%] xl:w-[70%]' src={Call} alt='Call phone' />
+      <img className='w-[40%] xl:w-[50%]' src={Call} alt='Call phone' />
     </div>
   )
 }

@@ -1,17 +1,17 @@
-import {useState, useEffect} from 'react'
-import {NavLink, useLocation} from 'react-router-dom'
 import {
-  // ChevronDown,
-  Menu,
-  X,
-  // Zap,
-  Shield,
   // Settings,
   Home,
   Layers,
+  // ChevronDown,
+  Menu,
   // ShieldCheck,
   Newspaper,
+  // Zap,
+  Shield,
+  X,
 } from 'lucide-react'
+import { useEffect, useState } from 'react'
+import { NavLink, useLocation } from 'react-router-dom'
 
 const HeaderWeb = () => {
   const [isOpen, setIsOpen] = useState(false)
@@ -132,7 +132,7 @@ const HeaderWeb = () => {
                         className={`transition-colors duration-300 ${navLinkStyle}`}
                       />
                       <span
-                        className={`text-sm font-roboto transition-colors duration-300 ${navLinkStyle}`}
+                        className={`text-xs font-roboto transition-colors duration-300 ${navLinkStyle}`}
                       >
                         {item.name}
                       </span>
